@@ -21,7 +21,7 @@ The transformer architecture was first introducted in "Attention is all you need
 ### Setup
 
 #### 1. Download Spacy Languages:
-python -m spacy download en_core_web_sm 
+python -m spacy download en_core_web_sm  
 python -m spacy download de_core_news_sm
 
 ##### 2. Create a Virtual Environment:
@@ -33,7 +33,7 @@ Install the required libraries using the following command:
 pip install -r requirements.txt
 
 #### 4. Run file
-Position to desired methods folder, and run file to train the model(on gpu recommended, more then 100 epochs):
+Position to desired methods folder, and run file to train the model(on gpu recommended, more then 100 epochs):  
 python run train.py 
 
 
