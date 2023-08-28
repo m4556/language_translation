@@ -21,20 +21,19 @@ The transformer architecture was first introducted in "Attention is all you need
 ### Setup
 
 #### 1. Download Spacy Languages:
-python -m spacy download en  
-python -m spacy download de
+python -m spacy download en_core_web_sm 
+python -m spacy download de_core_news_sm
 
-#### 2. Conda environment:
-If you're using a Conda environment, create and activate the environment using the following commands:  
-conda create --n lang_translation_env  
-conda activate lang_translation_env
+##### 2. Create a Virtual Environment:
+python3 -m venv venv  
+source venv/bin/activate
 
 #### 3. Install required Libraries
 Install the required libraries using the following command:  
 pip install -r requirements.txt
 
 #### 4. Run file
-Position to desired methods folder, and run file to train the model:
+Position to desired methods folder, and run file to train the model(on gpu recommended, more then 100 epochs):
 python run train.py 
 
 
