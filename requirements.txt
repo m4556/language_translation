@@ -1,0 +1,5 @@
+torch
+torchtext==0.6
+spacy
+torchvision
+numpy

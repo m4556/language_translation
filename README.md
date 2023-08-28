@@ -1,7 +1,7 @@
 # 
 
 ###  Project Overview
-seq2seq model that translates German into English. The dataset used [Multi30k](https://www.statmt.org/wmt16/multimodal-task.html#task1).
+seq2seq model that translates German into English. 
 
 Metric used for evaluation: Bleu Score
 
@@ -19,14 +19,22 @@ The transformer architecture was first introducted in "Attention is all you need
 
 
 ### Setup
-torchtext=0.6
 
-Spacy languages used:
-- python -m spacy download en 
-- python -m spacy download de
- 
+#### 1. Download Spacy Languages:
+python -m spacy download en  
+python -m spacy download de
 
+#### 2. Conda environment:
+If you're using a Conda environment, create and activate the environment using the following commands:  
+conda create --n lang_translation_env  
+conda activate lang_translation_env
 
+#### 3. Install required Libraries
+Install the required libraries using the following command:  
+pip install -r requirements.txt
 
+#### 4. Run file
+Position to desired methods folder, and run file to train the model:
+python run train.py 
 
 
